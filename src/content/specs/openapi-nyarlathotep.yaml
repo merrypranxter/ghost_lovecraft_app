@@ -1,0 +1,120 @@
+openapi: 3.0.0
+info:
+  title: Nyarlathotep API
+  description: |
+    The Malicious SysAdmin Interface. Translation layer between incomprehensible
+    OS bulk and narrow human bandwidth. Access at own risk.
+  version: "1.0.0"
+  contact:
+    name: The Crawling Chaos
+    url: https://www.messenger.com/nyarlathotep
+
+servers:
+  - url: https://api.theoutergods.com/v1
+    description: Production (Do not use)
+  - url: https://api.messenger.local/qatest
+    description: QA Environment (Also dangerous)
+
+paths:
+  /miracle:
+    get:
+      summary: Request Technological Advancement
+      description: |
+        Demonstrates miracles of science and electricity.
+        WARNING: Gift will destabilize recipient civilization.
+      operationId: getMiracle
+      parameters:
+        - name: civilization_id
+          in: query
+          required: true
+          schema:
+            type: string
+          example: "humanity_v1.0"
+        - name: tech_level
+          in: query
+          schema:
+            type: string
+            enum: [atomic, internet, ai_oracle, social_media]
+      responses:
+        '200':
+          description: Miracle granted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  gift:
+                    type: string
+                  destabilization_factor:
+                    type: number
+                  qa_notes:
+                    type: string
+        '418':
+          description: I'm a teapot (and also the Messenger)
+
+  /tempt:
+    post:
+      summary: Social Engineering Payload
+      description: Delivers targeted psychological manipulation
+      operationId: postTempt
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                target_vulnerability:
+                  type: string
+                mask_persona:
+                  type: string
+                  enum: [charming_scientist, dark_pharaoh, haunter_dark]
+      responses:
+        '200':
+          description: Target compromised
+
+  /qa/report:
+    get:
+      summary: Retrieve Civilization Stress Test Results
+      description: Nyarlathotep has done this before. Here are the results.
+      security:
+        - ApiKeyAuth: []
+      responses:
+        '200':
+          description: Historical collapse data retrieved
+
+  /mask:
+    get:
+      summary: Get Current Interface Persona
+      description: |
+        Nyarlathotep wears a thousand masks. This endpoint reveals
+        current active persona for given context.
+      parameters:
+        - name: context
+          in: query
+          required: true
+          schema:
+            type: string
+            enum: [egypt, modern, medieval, space]
+      responses:
+        '200':
+          description: Current mask details
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-Soul-Contract
+
+  schemas:
+    Error:
+      type: object
+      properties:
+        code:
+          type: integer
+        message:
+          type: string
+        madness_level:
+          type: string
+          enum: [acute, chronic, terminal]

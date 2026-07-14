@@ -1,0 +1,13 @@
+[Unit]
+Description=Cthulhu Rootkit Decompression Timer
+ConditionStarAlignment=true
+
+[Timer]
+OnBootSec=9999years
+OnUnitActiveSec=infinity
+# Trigger when "stars are right"
+# Astronomical alignment check
+Unit=cthulhu-decompression.service
+
+[Install]
+WantedBy=timers.target

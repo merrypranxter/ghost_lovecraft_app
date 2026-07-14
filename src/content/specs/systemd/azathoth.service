@@ -1,0 +1,17 @@
+[Unit]
+Description=Azathoth CPU - The Blind Idiot God
+Documentation=man:azathoth(8)
+After=systemd-sysctl.target
+DefaultDependencies=no
+
+[Service]
+Type=simple
+ExecStart=/usr/sbin/azathoth --blind --idiot --center-of-chaos
+Restart=on-failure
+RestartSec=0
+CPUAffinity=0-65535
+# IMPORTANT: Do not stop the flutes
+WatchdogSec=0
+
+[Install]
+WantedBy=multi-user.target

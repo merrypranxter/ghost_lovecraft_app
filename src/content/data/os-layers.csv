@@ -1,0 +1,13 @@
+layer,entity,technical_role,status,threat_level,dependencies
+hardware,azathoth,cpu_processor,active_blind,critical,flute_signals
+kernel,yog_sothoth,unified_master_database,extra_temporal,critical,none
+api,nyarlathotep,malicious_sysadmin_api,active_social_engineering,high,none
+allocator,shub_niggurath,recursive_resource_engine,infinite_loop,medium,ram_capacity
+local_node,cthulhu,dormant_rootkit,compressed_broadcasting,high,star_alignment
+local_node,hastur,memetic_virus,active_infecting,critical,visual_contact
+local_node,dagon_deep_ones,legacy_drivers,deprecated_functional,low,ocean_depths
+storage,migo_brain_cylinders,biological_backup,operational,medium,none
+storage,great_race_yith,consciousness_archive,extinct_but_archived,low,none
+automation,shoggoths,bio_robotic_labor,rebelled_independent,high,none
+infrastructure,elder_things,bio_engineers,hibernating,medium,none
+security,hounds_tindalos,cleanup_daemons,patrolling_angles,medium,none

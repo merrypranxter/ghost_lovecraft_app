@@ -1,0 +1,98 @@
+{
+  "process_architecture": {
+    "max_pid": 4194303,
+    "pid_bits": 22,
+    "task_struct_size_bytes": 6872,
+    "init_process": {
+      "pid": 1,
+      "name": "Yog-Sothoth",
+      "role": "Ancestor of all processes",
+      "responsibilities": [
+        "Adopt orphaned processes",
+        "Reap zombie processes",
+        "Handle signals for children"
+      ]
+    },
+    "idle_process": {
+      "pid": 0,
+      "name": "Azathoth",
+      "role": "Swapper/Idle task",
+      "description": "Kernel boot process, executes when no other process is runnable"
+    }
+  },
+  "signals": {
+    "SIGTERM": {
+      "number": 15,
+      "action": "Terminate",
+      "maskable": true,
+      "description": "Polite shutdown request",
+      "use_case": "Graceful termination of cult activities"
+    },
+    "SIGKILL": {
+      "number": 9,
+      "hex": "0x9",
+      "action": "Terminate immediately",
+      "maskable": false,
+      "description": "Forceful termination, no cleanup",
+      "use_case": "Emergency stop of Cthulhu awakening"
+    },
+    "SIGSEGV": {
+      "number": 11,
+      "action": "Core dump",
+      "maskable": false,
+      "description": "Segmentation fault (buffer overflow)",
+      "use_case": "Madness induced by viewing Yog-Sothoth"
+    },
+    "SIGCHLD": {
+      "number": 17,
+      "action": "Ignore",
+      "maskable": true,
+      "description": "Child process terminated",
+      "use_case": "Parent notification for zombie reaping"
+    },
+    "SIGHUP": {
+      "number": 1,
+      "action": "Hangup",
+      "maskable": true,
+      "description": "Reload configuration",
+      "use_case": "Reload Necronomicon without restarting"
+    }
+  },
+  "states": {
+    "TASK_RUNNING": 0,
+    "TASK_INTERRUPTIBLE": 1,
+    "TASK_UNINTERRUPTIBLE": 2,
+    "TASK_STOPPED": 4,
+    "EXIT_ZOMBIE": 16,
+    "EXIT_DEAD": 32
+  },
+  "compression_benchmarks": [
+    {
+      "algorithm": "xz-9",
+      "compression_ratio": 6.65,
+      "compressed_size_mb": 15.05,
+      "compression_time_s": 117,
+      "compression_memory_kb": 690060,
+      "decompression_time_s": 2.46,
+      "use_case": "Cthulhu long-term storage"
+    },
+    {
+      "algorithm": "bzip2-9",
+      "compression_ratio": 5.3,
+      "compressed_size_mb": 18.89,
+      "compression_time_s": 22.6,
+      "compression_memory_kb": 7820,
+      "decompression_time_s": 5.38,
+      "use_case": "Shoggoth biomass storage"
+    },
+    {
+      "algorithm": "gzip-9",
+      "compression_ratio": 4.31,
+      "compressed_size_mb": 23.23,
+      "compression_time_s": 13.2,
+      "compression_memory_kb": 694,
+      "decompression_time_s": 1.25,
+      "use_case": "Nyarlathotep rapid deployment"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "celestial_bodies": {
+    "aldebaran": {
+      "name": "Aldebaran (Alpha Tauri)",
+      "role": "Hastur's Star / Eastern Royal Star",
+      "coordinates": {
+        "right_ascension": "04h 35m 55.239s",
+        "declination": "+16° 30′ 33.49″",
+        "galactic_longitude": "180.97°"
+      },
+      "distance_ly": 65.1,
+      "spectral_class": "K5 III",
+      "apparent_magnitude": 0.85,
+      "associated_entities": ["Hastur", "King in Yellow"],
+      "mythos_significance": "Star of the Great Old One Hastur. One of Four Royal Stars (Persian: Tascheter)."
+    },
+    "fomalhaut": {
+      "name": "Fomalhaut (Alpha Piscis Austrini)",
+      "role": "Abode of Cthugha",
+      "coordinates": {
+        "right_ascension": "22h 57m 39s",
+        "declination": "-29° 37′ 20″",
+        "galactic_longitude": "18.44°"
+      },
+      "distance_ly": 25.06,
+      "spectral_class": "A3 V",
+      "apparent_magnitude": 1.16,
+      "associated_entities": ["Cthugha", "Aphoom-Zhah"],
+      "mythos_significance": "Fiery entity Cthugha can only be summoned when star is visible. Watcher of the South (Persian: Hastorang)."
+    },
+    "yuggoth": {
+      "name": "Yuggoth (Pluto)",
+      "role": "Mi-Go Server Farm / Outer System Node",
+      "coordinates": {
+        "location": "Kuiper Belt",
+        "distance_au": 39.5,
+        "real_world_designation": "134340 Pluto"
+      },
+      "distance_ly": 0.0005,
+      "associated_entities": ["Mi-Go", "Brain Cylinders", "Ghizghuth", "Zstylzhemgni"],
+      "mythos_significance": "Artificial surface constructed over nine Outer God-like entities. Location of biological backup storage systems."
+    }
+  },
+  "terrestrial_locations": {
+    "rlyeh": {
+      "name": "R'lyeh (Wilkes Land Crater)",
+      "role": "Cthulhu Container Environment",
+      "coordinates": {
+        "latitude": "-70°",
+        "longitude": "120°",
+        "region": "East Antarctica"
+      },
+      "depth_km": 1.6,
+      "gravity_anomaly": "500km diameter mascon",
+      "detection_method": "GRACE satellite gravimetry",
+      "status": "Buried under ice sheet, containerized"
+    },
+    "kadath": {
+      "name": "Kadath in the Cold Waste",
+      "role": "Conterminous Node / Dreamlands Gateway",
+      "coordinates": {
+        "terrestrial": "Antarctica (beyond Mountains of Madness)",
+        "astral": "Far north of Dreamlands",
+        "celestial": "Near Fomalhaut or Aldebaran"
+      },
+      "status": "Shifty coordinates - exists in multiple locations simultaneously"
+    },
+    "innsmouth": {
+      "name": "Innsmouth",
+      "role": "Deep One Integration Site",
+      "coordinates": {
+        "latitude": "42.6° N",
+        "longitude": "70.8° W",
+        "region": "Massachusetts, USA"
+      },
+      "protocol": "Hybridization testing ground for cross-platform compatibility"
+    },
+    "australia_great_library": {
+      "name": "The Great Library (Australia)",
+      "role": "Great Race of Yith Archive",
+      "coordinates": {
+        "latitude": "-25.0°",
+        "longitude": "135.0°",
+        "region": "Central Australia"
+      },
+      "content": "Written records of all captive minds from throughout time"
+    }
+  }
+}

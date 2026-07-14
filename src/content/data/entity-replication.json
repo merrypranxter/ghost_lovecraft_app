@@ -1,0 +1,85 @@
+{
+  "replication_architecture": {
+    "description": "Yithian Archive and Great Library replication strategies",
+    "strategies": {
+      "master_slave": {
+        "description": "One primary handles writes, replicas handle reads",
+        "nodes": {
+          "master": {
+            "location": "Great Library (Australia)",
+            "role": "Primary write node for current timeline",
+            "replication_method": "oplog streaming (MongoDB style)"
+          },
+          "slaves": [
+            {
+              "location": "Pnakotus (Antarctica)",
+              "role": "Hot standby for disaster recovery",
+              "lag_seconds": 0.5
+            },
+            {
+              "location": "Yuggoth (Pluto)",
+              "role": "Offsite backup via Mi-Go transmission",
+              "lag_minutes": 5
+            }
+          ]
+        },
+        "failover": "Automatic voting among secondaries if master fails",
+        "use_case": "Temporal consciousness database (Great Race of Yith)"
+      },
+      "sharding": {
+        "description": "Horizontal partitioning of data across multiple servers",
+        "shards": [
+          {
+            "key_range": "Pre-Cambrian to 1000 AD",
+            "location": "Shard 1: Australia",
+            "size_tb": 45
+          },
+          {
+            "key_range": "1000 AD to 1900 AD",
+            "location": "Shard 2: Antarctica",
+            "size_tb": 120
+          },
+          {
+            "key_range": "1900 AD to present",
+            "location": "Shard 3: Yuggoth",
+            "size_tb": 800
+          }
+        ],
+        "routing": "Hash of temporal coordinates determines shard",
+        "use_case": "Scaling consciousness storage beyond single node capacity"
+      },
+      "peer_to_peer": {
+        "description": "Every node contains full copy, all can read/write",
+        "supported": false,
+        "reason": "Yithian database requires strong consistency; P2P causes write conflicts",
+        "alternatives": ["Multi-master with conflict resolution (deprecated)"]
+      }
+    },
+    "consistency_models": {
+      "synchronous": {
+        "description": "Master waits for slave acknowledgment before commit",
+        "durability": "Guaranteed (write confirmed on N nodes)",
+        "latency": "High (round-trip to Pluto: 4-6 hours at light speed)",
+        "use_case": "Critical summoning rituals (Cthulhu awakening)"
+      },
+      "asynchronous": {
+        "description": "Master commits immediately, slaves catch up",
+        "durability": "Eventual (temporary data loss risk)",
+        "latency": "Low (local confirmation only)",
+        "use_case": "Non-critical dream logging, cultist monitoring"
+      }
+    },
+    "backup_policies": {
+      "snapshot": {
+        "frequency": "Daily at midnight (when stars are quiet)",
+        "retention": "30 days (hot), 1 year (warm), forever (cold)",
+        "method": "xfs snapshots for fast recovery"
+      },
+      "incremental": {
+        "frequency": "Every 15 minutes",
+        "scope": "Only changed consciousness records",
+        "destination": "Replicated to Yuggoth via Mi-Go courier"
+      }
+    }
+  }
+}
