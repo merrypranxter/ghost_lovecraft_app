@@ -1,0 +1,202 @@
+{
+  "system_architecture": {
+    "version": "1.0.0",
+    "classification": "COSMIC_HORROR",
+    "last_updated": "2026-03-19"
+  },
+  "core_os": {
+    "cpu": {
+      "id": "azathoth",
+      "name": "Azathoth",
+      "class": "central_processing_unit",
+      "status": "active_blind",
+      "awareness": "null",
+      "clock_speed": "billions_hz",
+      "dependencies": ["flute_signals", "pulse_width_modulation"],
+      "failure_mode": "halt",
+      "horror_type": "indifference",
+      "technical_role": "executes_binary_without_semantic_understanding",
+      "source_stories": [
+        "The Dream-Quest of Unknown Kadath",
+        "Azathoth (fragment)",
+        "The Dreams in the Witch House"
+      ]
+    },
+    "kernel": {
+      "id": "yog_sothoth",
+      "name": "Yog-Sothoth",
+      "class": "unified_kernel_master_database",
+      "status": "extra_temporal",
+      "time_handling": "non_linear_all_addressable",
+      "functions": [
+        "memory_management",
+        "access_control",
+        "temporal_indexing",
+        "gatekeeping"
+      ],
+      "security_model": "mandatory_access_control",
+      "attack_surface": "buffer_overflow_madness",
+      "technical_role": "knows_the_gate_is_the_gate_is_the_key",
+      "source_stories": [
+        "The Dunwich Horror",
+        "The Case of Charles Dexter Ward",
+        "Through the Gates of the Silver Key"
+      ]
+    },
+    "api": {
+      "id": "nyarlathotep",
+      "name": "Nyarlathotep",
+      "class": "malicious_sysadmin_api",
+      "status": "active_social_engineering",
+      "accessibility": "public_facing_only_outer_god_with_personality",
+      "methods": [
+        "demonstrate_miracle",
+        "social_engineering",
+        "stress_test_civilization",
+        "qa_testing"
+      ],
+      "attack_vectors": [
+        "atomic_power",
+        "internet",
+        "algorithmic_social_media",
+        "ai_oracles"
+      ],
+      "technical_role": "translation_layer_with_undisclosed_agenda",
+      "source_stories": [
+        "Nyarlathotep (prose poem)",
+        "The Haunter of the Dark",
+        "The Dream-Quest of Unknown Kadath",
+        "The Rats in the Walls"
+      ]
+    },
+    "resource_allocator": {
+      "id": "shub_niggurath",
+      "name": "Shub-Niggurath",
+      "class": "recursive_generative_engine",
+      "status": "infinite_spawn_loop",
+      "output": "thousand_young_processes",
+      "resource_target": "ram",
+      "goal": "none_fills_because_it_is_function",
+      "horror_type": "scale_and_inevitability",
+      "technical_role": "fills_every_available_computational_resource",
+      "source_stories": [
+        "The Dunwich Horror",
+        "The Whisperer in Darkness",
+        "The Dreams in the Witch House"
+      ]
+    }
+  },
+  "local_nodes": {
+    "rootkit": {
+      "id": "cthulhu",
+      "name": "Cthulhu",
+      "class": "dormant_rootkit",
+      "state": "compressed_not_sleeping",
+      "container": "rlyeh",
+      "location": "pacific_ocean_3km_depth",
+      "physics_engine": "non_euclidean_alternate",
+      "broadcast_frequency": "low_freq_rem_packets",
+      "installation_vector": "preinstall_software_to_subconscious",
+      "trigger_condition": "when_stars_are_right",
+      "monitoring_duration": "pre_civilization_to_present",
+      "technical_role": "containerized_process_awaiting_decompression",
+      "source_stories": [
+        "The Call of Cthulhu",
+        "The Dunwich Horror",
+        "The Dream-Quest of Unknown Kadath"
+      ]
+    },
+    "memetic_virus": {
+      "id": "hastur",
+      "name": "Hastur / The King in Yellow",
+      "class": "memetic_virus_visual_exploit",
+      "body": "none_information_only",
+      "vector": "yellow_sign_geometric",
+      "attack_surface": "human_visual_cortex",
+      "installation_time": "instant_one_look",
+      "execution_stages": {
+        "act_i": "infection_benign",
+        "act_ii": "payload_installation",
+        "act_iii": "execution_no_recovery"
+      },
+      "propagation": "compelled_art_creation",
+      "technical_role": "cognitive_malware_installing_backdoor_in_perceptual_stack",
+      "source_stories": [
+        "The Whisperer in Darkness (oblique)",
+        "Robert W. Chambers (original)"
+      ]
+    },
+    "legacy_drivers": {
+      "id": "dagon_deep_ones",
+      "name": "Dagon & The Deep Ones",
+      "class": "deprecated_bio_interface_hardware",
+      "version": "1.0",
+      "status": "deprecated_but_functional",
+      "storage": "ocean_deep_low_power",
+      "protocol": "hybridization_cross_platform",
+      "compatibility": "legacy_to_current_biological",
+      "integration_site": "innsmouth",
+      "technical_role": "cross_platform_compatibility_between_deprecated_and_current_substrate",
+      "source_stories": [
+        "Dagon",
+        "The Shadow Over Innsmouth",
+        "The Call of Cthulhu"
+      ]
+    }
+  },
+  "storage_systems": {
+    "brain_cylinders": {
+      "id": "migo_storage",
+      "name": "Mi-Go Brain Cylinders",
+      "class": "biological_cold_storage",
+      "medium": "nutrient_fluid_prion_based",
+      "io_interfaces": ["sight", "hearing", "speech"],
+      "optional_mobility": "exoskeleton_unit",
+      "destination": "yuggoth_and_beyond",
+      "technical_role": "consciousness_extraction_for_interstellar_transport",
+      "source_stories": ["The Whisperer in Darkness"]
+    },
+    "consciousness_archive": {
+      "id": "great_race_yith",
+      "name": "Great Race of Yith",
+      "class": "temporal_consciousness_database",
+      "method": "consciousness_projection_time_space",
+      "storage_location": "great_library_australia",
+      "security": "memory_wipe_on_return",
+      "technical_role": "archive_of_all_minds_throughout_time",
+      "source_stories": ["The Shadow Out of Time"]
+    }
+  },
+  "automation": {
+    "biorobots": {
+      "id": "shoggoths",
+      "name": "Shoggoths",
+      "class": "bio_robotic_labor",
+      "origin": "engineered_elder_things",
+      "composition": "protoplasmic_pluripotent",
+      "capabilities": [
+        "shape_shifting",
+        "bioluminescence",
+        "extreme_environment_survival",
+        "autonomous_will"
+      ],
+      "status": "independent_post_rebellion",
+      "location": "antarctic_abyss",
+      "technical_role": "self_modifying_biological_automation",
+      "source_stories": ["At the Mountains of Madness", "The Shadow Over Innsmouth"]
+    }
+  },
+  "security": {
+    "cleanup_daemons": {
+      "id": "hounds_tindalos",
+      "name": "Hounds of Tindalos",
+      "class": "system_integrity_daemons",
+      "habitat": "angles_of_time",
+      "tracking_method": "geometric_signature",
+      "trigger": "temporal_divergence_non_euclidean_shortcut",
+      "evasion": "swirl_mimic_natural_curvature",
+      "technical_role": "integrity_enforcement_intrusion_detection",
+      "source_stories": ["Frank Belknap Long", "Referenced in Dreams in the Witch House"]
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "raft_cluster_configuration": {
+    "cluster_id": "great-old-ones-consensus",
+    "version": "3.0",
+    "description": "Raft consensus cluster for Lovecraftian OS distributed entities",
+    "servers": [
+      {
+        "id": 1,
+        "name": "Azathoth",
+        "role": "follower",
+        "address": "center-of-chaos:8080",
+        "persistent_state": {
+          "current_term": 0,
+          "voted_for": null,
+          "log": []
+        },
+        "volatile_state": {
+          "commit_index": 0,
+          "last_applied": 0
+        },
+        "leader_state": null,
+        "notes": "PID 0, but follower in consensus. Halts = crash."
+      },
+      {
+        "id": 2,
+        "name": "Yog-Sothoth",
+        "role": "leader",
+        "address": "the-gate:8080",
+        "persistent_state": {
+          "current_term": 42,
+          "voted_for": 2,
+          "log_length": 18446744073709551615
+        },
+        "volatile_state": {
+          "commit_index": 9999999999999,
+          "last_applied": 9999999999999
+        },
+        "leader_state": {
+          "next_index": {
+            "1": 18446744073709551615,
+            "3": 18446744073709551615,
+            "4": 18446744073709551615,
+            "5": 18446744073709551615
+          },
+          "match_index": {
+            "1": 9999999999990,
+            "3": 9999999999999,
+            "4": 9999999999980,
+            "5": 0
+          }
+        },
+        "notes": "Usually leader due to most up-to-date log (knows all). Extra-temporal consistency."
+      },
+      {
+        "id": 3,
+        "name": "Shub-Niggurath",
+        "role": "follower",
+        "address": "black-goat:8080",
+        "persistent_state": {
+          "current_term": 42,
+          "voted_for": 2,
+          "log_length": 18446744073709551615
+        },
+        "volatile_state": {
+          "commit_index": 9999999999999,
+          "last_applied": 9999999999999
+        },
+        "leader_state": null,
+        "notes": "High throughput log replication (Thousand Young = parallel appenders)."
+      },
+      {
+        "id": 4,
+        "name": "Nyarlathotep",
+        "role": "learner",
+        "address": "the-messenger:8080",
+        "persistent_state": {
+          "current_term": 42,
+          "voted_for": null,
+          "log_length": 9999999999999
+        },
+        "volatile_state": {
+          "commit_index": 9999999999999,
+          "last_applied": 9999999999999
+        },
+        "leader_state": null,
+        "notes": "Non-voting member. Replicates for read scaling but cannot vote or become leader (malicious tendencies)."
+      },
+      {
+        "id": 5,
+        "name": "Cthulhu",
+        "role": "follower",
+        "address": "rlyeh:8080",
+        "persistent_state": {
+          "current_term": 42,
+          "voted_for": 2,
+          "log_length": 1000000000,
+          "status": "compressed"
+        },
+        "volatile_state": {
+          "commit_index": 1000000000,
+          "last_applied": 1000000000
+        },
+        "leader_state": null,
+        "notes": "Log significantly behind (dormant). Catching up via delta sync."
+      }
+    ],
+    "configuration": {
+      "heartbeat_interval_ms": 50,
+      "election_timeout_min_ms": 150,
+      "election_timeout_max_ms": 300,
+      "max_entries_per_rpc": 100,
+      "batch_size": 1000,
+      "snapshot_threshold": 10000000
+    },
+    "safety_properties": {
+      "election_safety": true,
+      "leader_append_only": true,
+      "log_matching": true,
+      "leader_completeness": true,
+      "state_machine_safety": true
+    },
+    "fault_tolerance": {
+      "total_nodes": 5,
+      "max_failures": 2,
+      "quorum_size": 3,
+      "current_failed": ["Cthulhu (partitioned)"],
+      "operational": true
+    }
+  }
+}
