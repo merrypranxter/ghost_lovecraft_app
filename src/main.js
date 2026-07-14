@@ -1,5 +1,3 @@
-import './styles.css';
-
 const sections = [
   { id:'boot', title:'Boot Sequence', glyph:'⟊', tag:'PID 0', text:'Reality wakes like a machine that never meant to become a world: a blind processor, a clock pulse, and user-space minds mistaking uptime for meaning.', note:'Inspired by the source repo’s Azathoth-as-CPU mapping: horror emerges from indifferent execution, not evil intent.', cmd:'exec --reality --no-semantic-awareness' },
   { id:'kernel', title:'Ghost Kernel', glyph:'◬', tag:'YOG://KERNEL', text:'Every moment is an addressable sector. The Gate and Key becomes a memory manager where past and future are permissions, not places.', note:'Yog-Sothoth is reimagined as the unified kernel: access control, database, temporal index, and forbidden pointer arithmetic.', cmd:'temporal_query --past --present --future' },
